@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 10rem  10rem;
 }
 
@@ -34,7 +34,7 @@ body {
     width: 100%;
     max-width: 98rem;
     padding: 5rem;
-    background-color: #000000b6;
+    background-color: #444444;
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
