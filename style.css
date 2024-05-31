@@ -24,7 +24,7 @@ body {
 
 .container {
 
-    margin-top: 130rem;
+    margin-top: 252rem;
     color: #ffffff;
 }
 
@@ -261,7 +261,7 @@ header {
 }
 
 .navbar .close-btn:hover{
-    background: #dbf303;
+    color: #daf107;
 }
 .navbar .links a{
     color: #fff;
