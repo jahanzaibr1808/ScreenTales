@@ -1,6 +1,160 @@
 /* Importing Google font - Open Sans */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10rem  10rem;
+}
+
+.container {
+
+    margin-top: 130rem;
+    color: #ffffff;
+}
+
+
+
+.blog-post {
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #000000b6;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 10px;
+   
+   
+}
+
+.blog-post_img {
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+
+.blog-post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .8rem;
+    display: block;
+}
+
+.blog-post_img img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+    border-radius: .8rem;
+}
+
+.blog-post_date span {
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.blog-post_title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.blog-post_text {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    color: #f7f7f7b3;
+}
+
+.blog-post_cta {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .8rem;
+    background: linear-gradient(to right, #c50000 0%, #bdba04 100%);
+}
+
+.blog-post_cta:hover {
+    background: linear-gradient(to right, #bdba04 0%, #a70a05 100%);
+}
+
+@media screen and (max-width: 1068px) {
+    .blog-post {
+        max-width: 80rem;
+    }
+    .blog-post_img {
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+    .container h2 {
+        margin-top: 120px;
+        margin-left: 275px;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .blog-post {
+        max-width: 70rem;
+    }
+    .container h2 {
+        margin-top: 20px;
+        margin-left: 142px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        padding: 2.5rem;
+        flex-direction: column;
+        
+    }
+    .blog-post_img {
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -1rem);
+    }
+    .container {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .container h2 {
+        margin-top: 35px;
+        margin-left: 142px;
+    }
+}
+        
 * {
     margin: 0;
     padding: 0;
@@ -23,31 +177,11 @@
     }
   }
   
-  .dot {
-    position: absolute;
-    top: 50%;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    animation: dot-animation 2s infinite;
-  }
+
   
+
   
-  .dot {
-    position: relative;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    animation: dot-animation 2s infinite;
-  }
-  
-body {
-    height: 90vh;
-    width: 80%;
-    overflow: scroll;
-    background: url("images/BackGround2.jpg") center/cover no-repeat;
-    
-}
+
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
@@ -69,15 +203,15 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 .navbar {
     background-color: #000000c0;
     display: flex;
-    padding: 40px 2px;
+    padding: 40px 40px;
     align-items: center;
-    max-width: 1200px;
+    
     margin: 0 auto;
     border-color: #00bcd4;
     justify-content: space-between;
